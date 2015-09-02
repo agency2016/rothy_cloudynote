@@ -1,0 +1,664 @@
+/*#header{display: none}*/
+body {
+    background-color: #E4F3F8;
+}
+
+.row-bg {
+    background: #000000;
+}
+
+/*.table-bg{background: #CCDADF;}*/
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+    /*
+        background-color: #CCDADF;
+    */
+    background-color: #F9F9F9;
+}
+
+.table-striped tbody > tr:first-child {
+    border-bottom: 3px solid #8E989C;
+}
+
+.dashboard-header {
+    background: #ffffff;
+    margin-bottom: 4px;
+}
+
+.dashboard-logo img {
+    max-width: 85%;
+    margin: 10px 0;
+}
+
+.cb_navigation_dashboard {
+    font-family: 'helvetica';
+}
+
+.cb_navigation_dashboard .nav {
+    float: right;
+    margin: 0;
+    padding: 20px 0 0;
+}
+
+.cb_navigation_dashboard .nav li a {
+    letter-spacing: 1px;
+    color: #0d6ddd;
+    font-size: 16px;
+}
+
+.cb_navigation_dashboard .nav li a:hover {
+    background: none;
+}
+
+.cb_navigation_dashboard .nav li a .btn {
+    font-weight: bold;
+}
+
+.cb_navigation_dashboard .nav li a.login_signup_btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    float: left;
+}
+
+.cb_navigation_dashboard .nav li.login_signup_group a {
+    padding-left: 3px;
+}
+
+.cb_navigation_dashboard .nav li.login_signup_group a:first-child {
+    padding-left: 25px;
+}
+
+.dashboard-user-icon {
+    margin-top: 20px
+}
+
+.row-title-bg {
+    background: #74CBF2;
+}
+
+.dashboard-heading {
+    text-align: left;
+    text-shadow: 2px 2px #000;
+    color: #ffffff
+}
+
+.dashboard-heading:hover {
+    color: #ffffff
+}
+
+.breadcrumb-row-bg {
+    background: #ffffff
+}
+
+.table-area {
+    border: 1px solid #000000;
+    margin-bottom: 50px
+}
+
+.table-area-header-bg {
+    background: #ffffff
+}
+
+.table-area-filter-bg {
+    background: #B4B4B4
+}
+
+.table-area-num-count-bg {
+    background: #b4a6a0;
+    margin-bottom: 10px;
+}
+
+.table-area-header-bg h2 {
+    color: #000000;
+    text-align: left;
+    padding-left: 5px
+}
+
+.table-area-header {
+    background-color: #ffffff;
+}
+
+.table-area-header h3 {
+    color: #2259D7;
+    font-family: "helvetica";
+    padding: 0px 10px
+}
+
+.filter-span {
+    padding: 14px 0 0 17px;
+    color: #ffffff
+}
+
+#class-filter {
+    padding-top: 5px;
+}
+
+.student-form-group,
+.student-form-group label,
+.student-form-group input {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+.student-form-group {
+    margin-right: 5px;
+    padding-top: 15px
+}
+
+.student-form-group label {
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 34px;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+
+.student-student-form-group select {
+    margin-left: 10px
+}
+
+.student-form-group1,
+.student-form-group1 label,
+.student-form-group1 input {
+    display: inline;
+    margin-left: 10px;
+}
+
+.student-form-group1 {
+    margin-right: 5px;
+    padding-top: 15px
+}
+
+.student-form-group1 label {
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 34px;
+    padding-left: 10px;
+}
+
+.student-form-group1 select {
+    margin-left: 10px
+}
+
+.print-result {
+    padding: 10px
+}
+
+.warning-label-invite {
+    color: #F89406;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.warning-label-invite:hover {
+    color: #F89406
+}
+
+.important-label-invite {
+    color: #B94A48;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.important-label-invite:hover {
+    color: #F89406
+}
+
+.selected-stu {
+    padding-top: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.steps {
+    padding: 20px
+}
+
+.btn-prev-step {
+    background-color: #626262;
+    background-image: linear-gradient(to bottom, #626262, #626262);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-prev-step:hover {
+    color: #fff;
+    background-color: #626262;
+}
+
+.statistics-title h5 {
+    color: #0d6ddd;
+    font-family: 'helvetica';
+    font-size: 26px;
+    margin: 5px 0;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.dashboard-icon-area {
+    padding-top: 50px;
+}
+
+.dashboard-icon-bg {
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #CCDADF;
+    text-align: center;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-icon-bg img {
+    padding-bottom: 10px;
+}
+
+.dashboard-icon-bg a i {
+    padding-bottom: 10px;
+}
+
+.dashboard-icon-bg button {
+    margin: 0px;
+}
+
+.sort-down {
+    position: relative;
+    left: 10px
+}
+
+.sort-up {
+    position: absolute
+}
+
+/*****activity log stylesheet******/
+.form-group label {
+    margin: 10px 0 5px 0;
+    font-family: "helvetica";
+    font-size: 15px;
+}
+
+.legend-unit {
+    background: #ffffff;
+    width: 54%;
+    padding: 10px;
+}
+
+.legend-unit label {
+    font-family: "helvetica";
+    font-size: 15px;
+}
+
+.legend-unit ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.legend-unit ul li i {
+    margin-right: 5px
+}
+
+.signup-act {
+    color: #F8622E
+}
+
+.account-act {
+    color: #3A3A3A
+}
+
+.note-act {
+    color: #3467DC
+}
+
+.user-act {
+    color: #3A894C;
+}
+
+.red-act {
+    color: #FF2727;
+}
+
+.signup-act-bg {
+    background: #F8622E
+}
+
+.account-act-bg {
+    background: #3A3A3A
+}
+
+.note-act-bg {
+    background: #3467DC
+}
+
+.user-act-bg {
+    background: #3A894C;
+}
+
+.red-act-bd {
+    background: #FF2727;
+}
+
+.log-bg {
+    background: #ffffff;
+    padding: 0 10px;
+    margin-bottom: 40px
+}
+
+.log-bg h3 {
+    color: #000000;
+    text-align: left;
+}
+
+.label-override {
+    width: 50px;
+    text-align: center;
+    padding: 4px 10px !important;
+}
+
+.table-act ul li {
+    list-style: none;
+    padding: 7px 3px;
+}
+
+.table-act ul li span {
+    padding: 0px 6px;
+}
+
+.profile-name {
+    color: #A0A0A0;
+    font-weight: bold
+}
+
+.table-act tr {
+    padding: 10px;
+}
+
+.table-act tr td:first-child {
+    width: 120px;
+    vertical-align: middle;
+}
+
+.table-act tr td p:nth-child(2) {
+    color: #A0A0A0;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: "helvetica"
+}
+
+.table-act tr td p:nth-child(1) {
+    font-weight: normal;
+    font-family: "helvetica"
+}
+
+.footer-table {
+    background: #B4B4B4;
+    padding: 1px;
+    text-align: center;
+    width: 102.5%;
+    margin-left: -10px;
+}
+
+/*Registration page styelsheet*/
+.registration-table th {
+    padding: 6px !important;
+    font-size: 14px;
+}
+
+.registration-table th .sort-down {
+    left: 8px;
+}
+
+/*Class view page stylesheet*/
+.class-view-table tr td:nth-child(3) {
+    width: 350px;
+}
+
+.selected-class {
+    text-align: center;
+    color: #3468DC;
+    padding: 25px 0 0 0
+}
+
+.view-button {
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.class-view-pagi {
+    text-align: center;
+    padding-top: 5px
+}
+
+.class-view-filter-bg {
+    margin-top: -20px;
+    border-top: 2px solid #8F989C !important;
+    margin-bottom: 50px;
+    background: #CDDADF !important;
+}
+
+.class-view-filter-bg-top {
+    background: #ffffff !important;
+}
+
+.class-view-heading {
+    color: #3468DC;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.class-view-form-group label {
+    color: #000000
+}
+
+.container .class-view-filter-bg-top .span4 {
+    margin: 0 -50px 0 80px !important;
+}
+
+.not-assigned {
+    color: #ff0000
+}
+
+/*
+.class-view-table tr td span.class-name{width: 350px;}*/
+
+/*Invite teacher stylesheet*/
+.invite-teacher-form-bg {
+    margin-top: 30px
+}
+
+.invite-teacher-form-body {
+    background: #ffffff;
+    padding: 10px;
+}
+
+.invite-teacher-form-body p {
+    text-align: center;
+    font-size: 15.5px;
+}
+
+.invite-teacher-form-part {
+    margin-top: 30px
+}
+
+/*Student List styles with data tables style*/
+#adnanform_paginate {
+    margin: 20px 50px 20px 0;
+}
+
+#adnanform_info {
+    margin: 20px;
+}
+
+/*Data tables style override*/
+table.dataTable tr.odd {
+    background-color: transparent !important;
+}
+
+table.dataTable tr.even {
+    background-color: #CCDADF !important;
+}
+
+table.dataTable tr.odd td.sorting_1 {
+    background-color: transparent !important;
+}
+
+table.dataTable tr.even td.sorting_1 {
+    background-color: #CCDADF !important;
+}
+
+#adnanform thead tr {
+    border-bottom: 3px solid #8E989C;
+}
+
+#adnanform thead tr th {
+    text-align: left;
+}
+
+#adnanform thead tr th:first-child {
+    width: 10px !important;
+}
+
+#adnanform thead tr th:nth-child(1) {
+    width: 60px
+}
+
+#adnanform tfoot tr th select {
+    width: 100px !important;
+}
+
+table.dataTable tfoot th select {
+    width: 100px !important;
+}
+
+/************************************************************/
+
+.cnote-table-menu-bg {
+    background-color: #ffffff;
+    border-bottom: 1px solid;
+}
+
+.cnote-table-menu {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin: 0px !important;
+    height: 30px
+}
+
+.cnote-table-menu li {
+    display: table-cell;
+    border-right: 1px solid;
+    line-height: 30px
+}
+
+.cnote-table-menu li:last-child {
+    border-right: none !important;
+}
+
+.cnote-table-menu-active {
+    background-color: #3467DB;
+    color: #ffffff
+}
+
+.cnote-table-menu li:hover {
+    background-color: #3467DB;
+    color: #ffffff
+}
+
+.cnote-table-menu li a:hover {
+    color: #ffffff;
+    text-decoration: none
+}
+
+.cnote-table-menu-blue {
+    color: #3467DB
+}
+
+.cnote-table-menu-green {
+    color: #1EA92D
+}
+
+.cnote-table-menu-black {
+    color: #5C5D5F
+}
+
+.cnote-table-menu-red {
+    color: #FF0000
+}
+
+.cnote-table-menu-white {
+    color: #ffffff
+}
+
+/*Filter dropdown*/
+#user-filter {
+    width: 140px !important;
+}
+
+#action-filter {
+    width: 140px !important;
+}
+
+#status-filter {
+    width: 110px !important;
+}
+
+#class-view-status-filter {
+    width: 250px !important;
+}
+
+#alert-filter {
+    width: 110px !important;
+}
+
+#note-filter {
+    width: 180px !important;
+}
+
+.custom-span {
+    margin-left: 0px !important
+}
+
+#table-footer {
+    display: table;
+    margin: 15px 0 0
+}
+
+#table-footer li {
+    display: table-cell;
+    padding: 0 20px
+}
+
+#table-footer li select {
+    width: 100px !important;
+}
+
+/*Note Creation Step*/
+
+.add-receiver-button {
+    margin: 25px 0;
+}
+
+.modal {
+    left: 40%;
+    width: 800px
+}
+
+.display_none {
+    display: none
+}
+
+table.dataTable tfoot th {
+    text-align: left !important;
+}
+
+table.dataTable tfoot {
+    background: #dfd8d0;
+}

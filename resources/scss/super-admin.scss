@@ -1,0 +1,20 @@
+.main-content-body {
+  padding-top: 60px;
+
+  .cldnt-info-area {
+    .cldnt-pagination {
+      text-align: center;
+    }
+
+    .cldnt-user-list {
+      table {
+        td{
+          vertical-align: middle;
+          &.action-btn {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

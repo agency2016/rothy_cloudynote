@@ -1,0 +1,64 @@
+body {
+  background: $body_background_color;
+}
+
+a {
+  color: $default_link_color;
+  &:hover {
+    color: $default_link_color_hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "patua one";
+  font-weight: normal;
+  text-align: center;
+  color: $default_header_color;
+  &:hover {
+    color: $default_header_color_hover;
+  }
+}
+
+p, div {
+  font-size: 17px;
+}
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.page-title {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background: $page_title_bg_color;
+
+  h1 {
+    font-size: 45px;
+    font-weight: normal;
+    @include header-page-text-shadow();
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+
+input.input-lg {
+  height: 30px !important;
+  padding: 4px 16px !important;
+  font-size: 18px !important;
+  line-height: 1.33 !important;
+  border-radius: 6px !important;
+}
+
+textarea.input-lg {
+  font-size: 18px !important;
+  padding: 4px 16px !important;
+}
+
+
+.input-half {
+  width: 50% !important;
+}

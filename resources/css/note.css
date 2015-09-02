@@ -1,0 +1,288 @@
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+#new-note .tab-content {
+    overflow: visible;
+}
+
+#new-note .popover.left {
+    margin-left: -20px;
+}
+
+#new-note .preview-pagebreak {
+    margin-top: 20px;
+    border: 1px dotted #1e90ff;
+    text-align: center;
+}
+
+#new-note .preview-pagebreak span {
+    margin-top: 5px;
+}
+
+
+#new-note .group-item i.fa, #note-popover {
+    color: #0D6DDD;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.example li.placeholder {
+    position: relative;
+    /** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+    /** Define arrowhead **/
+}
+
+.item-container {
+    padding: 3px 0;
+}
+
+.control-group-highlight {
+    height: 50px;
+    background: rgba(255, 169, 0, 0.36);
+    border: 1px dashed #000000;
+    display: block;
+    width: 99%;
+}
+
+.droppable {
+    border: 1px solid #00ff00;
+}
+
+#note-area {
+}
+
+.note-area-text {
+    color: #5076F4;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.preview-note-url {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.preview-note-url a {
+    font-size: 12px;
+}
+
+.tab-content .tab-pane {
+    margin: 10px 0;
+}
+
+.tab-content .tab-pane .button-area, .tab-content .tab-pane .well {
+    text-align: center;
+}
+
+.powered-by-text {
+    font-size: 14px;
+}
+
+.sortable-note-area {
+    min-height: 50px;
+    border: 1px dotted #ccc;
+}
+
+.form-horizontal .control-group{
+    border:1px solid #fff;
+    padding:3px;
+}
+
+.item-holder {
+    background: #fcfcfc;
+    border-radius: 4px;
+    padding: 15px 0;
+}
+
+.item-holder .item-list {
+    display: inline-block;
+    width: 100%;
+}
+
+.item-holder .item-list label, .item-holder .item-list input {
+    float: left;
+}
+
+.item-holder .item-list > div {
+    float: left;
+}
+.item-holder .item-list > div.add-remove-icon {
+    margin-left: 3px;
+}
+.item-holder .item-list > div.add-remove-icon i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.item-holder .drag-item-label {
+    padding-top: 0;
+}
+
+/*Coded by sabuj*/
+.sortable-note-area{
+    overflow: visible;
+}
+.group-item{
+    border:1px solid #ddd; background: #E4F3F8;
+    margin:3px;
+}
+.group-item .control-groupnogap{
+    margin-bottom: 0 !important;
+}
+ .group-item .control-group{
+    position: relative;
+}
+
+.group-item .control-group .control-group-icon, .group-item .control-group .control-group-help-icon{
+   /* display:none;*/
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    display: block;
+    cursor: pointer;
+}
+#note-popover{
+    right: 5px;
+    top: 12px;
+    display: block;
+    cursor: pointer;
+}
+
+.group-item .control-group .control-group-help-icon,#note-popover {
+    left: 5px;
+    margin-left: 5px;
+    width: 5px;
+}
+
+.group-item .control-group:hover .control-group-icon {
+    display:block; 
+}
+
+.group-item .control-group .control-group-icon:before {
+    padding: 8px;
+}
+
+.group-item  .item-holder{
+    display: none;
+}
+.sectionbreak>hr{
+    color:black;
+    background-color:black;
+}
+.cnote-editor{
+ margin: 5px;
+}
+.text-bold{
+    font-weight: bold;
+}
+
+.label-paragraph-cnote{
+    font-weight: normal;
+    font-size: 14px;
+}
+.label-paragraph-cnote span{
+    padding-left: 5px;
+}
+.label-strong{
+    font-weight:bold;
+}
+.cnote-textarea{
+    width:420px;
+    height:130px;
+}
+.cnote-text{
+    width:420px;
+}
+.cnote-address-text{
+    width:220px;
+
+}
+.add-on-remove-time{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    border-radius: 0;
+    vertical-align: top;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    width: auto;
+}
+.add-on-remove-time i{
+display: inline-block;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+
+}
+
+.pay-btn{
+    margin-top: 5px;
+}
+.add-remove-payment{
+    margin-right:3px;
+}
+.payment-variable-add-more{
+    margin: 3px;
+}
+.payment-input-small{
+    width:45px;
+}
+.control-group > div.popover,.note-popover-holder > div.popover{
+    background-color: #E4F3F8;
+}
+.control-group > div.popover.left .arrow:after,.note-popover-holder > div.popover.left .arrow:after {
+    border-left-color: #E4F3F8;
+
+}
+
+.required-star span{
+    /* constrain the absolutely positioned pseudo */
+    position: relative;
+    /* create some space for the '*' */
+    margin-right: .4em;
+}
+.required-star span:after {
+    content:"*";
+    display: block;
+    position: absolute;
+    right: -.6em;
+    top: -.1em;
+    font-size: 30px;
+    color:red;
+}
+.required-star{
+    display: inline-block;
+}
+.required-star-label{
+    display: inline-block;
+}
+.required-star-label label{
+    /* constrain the absolutely positioned pseudo */
+    position: relative;
+    /* create some space for the '*' */
+    margin-right: .4em;
+}
+.required-star-label label:after {
+    content:"*";
+    display: block;
+    position: absolute;
+    right: -.6em;
+    top: -.1em;
+    font-size: 30px;
+    color:red;
+}

@@ -1,0 +1,10 @@
+CREATE TABLE `taken_packages` (
+  `taken_packages_id` char(32) NOT NULL,
+  `taken_packages_transaction_order_id` char(32) NOT NULL,
+  `taken_packages_organisation_email_hash` char(32) NOT NULL,
+  `taken_packages_package_code` char(4) NOT NULL,
+  `taken_packages_start_date` date NOT NULL,
+  `taken_packages_end_date` date NOT NULL,
+  `taken_packages_purchase_date` date NOT NULL,
+  `taken_packages_package_status_id` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

@@ -1,0 +1,39 @@
+.faq-container {
+  background: #FFFFFF;
+  margin: 60px 0;
+  padding: 20px;
+
+
+  .faq-details-header {
+    .faq-title {
+      font-family: "patua one";
+      font-weight: normal;
+      color: #000000;
+    }
+  }
+
+  .faq-list {
+    >li {
+      list-style-type: none;
+      padding: 7px 15px;
+      margin: 7px 0;
+
+      .question {
+        font-family: "patua one";
+        font-weight: normal;
+        text-align: left;
+        color: #000000;
+      }
+
+      .answer {
+        ul {
+          padding: 10px 5px;
+          li {
+            list-style-type: disc;
+          }
+        }
+      }
+    }
+  }
+
+}

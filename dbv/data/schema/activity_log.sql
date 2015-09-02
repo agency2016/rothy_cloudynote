@@ -1,0 +1,11 @@
+CREATE TABLE `activity_log` (
+  `activity_log_id` char(32) NOT NULL,
+  `activity_log_from_name` varchar(200) NOT NULL,
+  `activity_log_from_id` bigint(20) NOT NULL,
+  `activity_log_to_id` bigint(20) NOT NULL,
+  `activity_log_message` varchar(1500) NOT NULL,
+  `activity_log_label_id` tinyint(4) NOT NULL,
+  `activity_log_type_id` tinyint(4) NOT NULL,
+  `activity_log_date` date NOT NULL,
+  UNIQUE KEY `activity_log_id` (`activity_log_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1

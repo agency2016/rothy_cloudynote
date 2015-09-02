@@ -1,0 +1,31 @@
+.note-counter{
+  span{
+    &.firstLetter{
+      color: #5BB75B;
+      font-family: 'Patua One';
+      font-size: 24px;
+      margin: 5px 0;
+      text-align: left;
+    }
+
+    &.lastLetter{
+      color: #5BB75B;
+      font-family: 'Patua One';
+      font-size: 24px;
+      margin: 5px 0;
+      text-align: right;
+    }
+
+    &.digits{
+      background: url("../img/roll-placeholder.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 56px;
+      height: 69px;
+      line-height: 70px;
+      margin: 0;
+      text-align: center;
+      width: 61px;
+    }
+  }
+}

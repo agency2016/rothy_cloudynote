@@ -1,0 +1,89 @@
+
+/***main tinyscrollbar css****** please add images folder and slider.js****/
+
+
+.itemscroll
+{
+    width:98%;
+    
+    position: relative;
+}
+
+.itemscroll .viewport
+{
+    height: 460px;
+    overflow:hidden;
+    position:relative;
+    background: transparent;
+}
+
+.itemscroll .overview
+{
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+    padding: 10px 20px;
+}
+
+.itemscroll .scrollbar
+{
+    background:transparent url(../images/slider_image/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position:absolute;
+    background-position:0 0;
+    right: -24px;
+    top:0;
+    width:15px;
+}
+
+.itemscroll .track
+{
+    background:transparent url(../images/slider_image/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height:100%;
+    width:13px;
+    position:relative;
+    padding:0 1px;
+}
+
+.itemscroll .thumb
+{
+    background:transparent url(../images/slider_image/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height:20px;
+    width:25px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:-5px;
+}
+
+.itemscroll .thumb .end
+{
+    background:transparent url(../images/slider_image/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow:hidden;
+    height:5px;
+    width:25px;
+}
+
+.itemscroll .disable
+{
+    display:none;
+}
+
+.noSelect
+{
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+
+
+
+
+
+
+
+

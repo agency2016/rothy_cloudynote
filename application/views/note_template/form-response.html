@@ -1,0 +1,659 @@
+{
+    'reply_form_start':
+        '<form id="response-form" class="form-horizontal" method="post">',
+        'reply_form_note_title':    '
+                                        <div class="note-title">{note_title}</div>
+                                    ',
+        'reply_control_group_start':
+            '                           <div class="control-group">
+                                                <label class="control-label">{label_name}</label>
+                                                <div class="controls">
+                                                    ',
+        'reply_control_required_group_start':
+                                                    '
+                                                    <div class="control-group">
+                                                        <div class="required-star-label"><label class="" style="margin-left:73%;">{label_name}</label></div>
+                                                        <div class="controls">
+                                                        ',
+                                                    'reply_control_group_end':    '
+                                                </div>
+                                            </div>
+                                        ',
+
+    'reply_item_checkbox_start_hidden_info':
+                                                '<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">',
+    'reply_item_checkbox_hidden_item_list_checked': '     <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" data-item-id="{item_id}" class="{data_type}" data-id="{data_type}-chkd-{group_id}{item_id}" data-caller-name="cnote_form_info[{group_id}][{data_type}][total_items]" name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][checked]" value="{item_checked}">',
+    'reply_item_radio_hidden_item_list_checked': '
+         <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" data-item-id="{item_id}" class="{data_type} toggle" data-id="{data_type}-chkd-{group_id}{item_id}" data-caller-name="cnote_form_info[{group_id}][{data_type}][total_items]" name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][checked]" value="{item_checked}">',
+    'reply_control_dropdown_hidden_checked_item':
+
+    '<input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type} dropdown-hidden" data-item-id="{item_id}" data-id="{data_type}-chkd-{group_id}{item_id}" data-caller-name="cnote_form_info[{group_id}][{data_type}][total_items]" name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][checked]" value="{item_checked}">',
+
+
+    'reply_item_checkbox_end_hidden_info':    '
+                                                </div>
+                                                    ',
+'reply_payment_due_start':
+'
+<div class="payment-due-parent-view">
+    ',
+
+    'reply_payment_due_hidden_start':'
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="{group_label}">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-total-payment-{group_id}" name="cnote_form_info[{group_id}][{data_type}][total]"
+               value="{total}">
+        ',
+        'reply_payment_due_hidden_item_quantity':'
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="payment-quantity-{data_type}-text-{group_id}{item_id}" value="{quantity}"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][quantity]">
+        ',
+        'reply_payment_due_hidden_item_required':'
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="payment-required-{data_type}-text-{group_id}{item_id}" value="{required}"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][required]">
+        ',
+        'reply_payment_due_hidden_item_label':'
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="payment-label-{data_type}-text-{group_id}{item_id}" data-caller-name="cnote_form_info[{group_id}][{data_type}][total_items]"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][label_name]" value="{item_label}">
+
+        ',
+        'reply_payment_due_hidden_item_dollar':'
+
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="dollar-{data_type}-text-{group_id}{item_id}"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][label_name]" value="{dollar}">
+
+        ',
+        'reply_payment_due_hidden_item_cent':'
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="cent-{data_type}-text-{group_id}{item_id}"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][default_cent_value]" value="{cent}">
+        <input type="hidden" data-type="{data_type}" data-item-id="{item_id}" data-group-id="{group_id}" class="{data_type}"
+               data-id="item-total-{data_type}-text-{group_id}{item_id}"
+               name="cnote_form_info[{group_id}][{data_type}][total_items][{item_id}][item-total]" value="{dollar_cent}">
+        ',
+        'reply_payment_due_hidden_end':'
+    </div>
+    ',
+    'reply_payment_due_disable_end':'
+
+',
+'reply_payment_due_item_holder_start':'
+<div class="">
+
+    ',
+    'reply_payment_due_item_holder_list_item_first':'
+    <div class="payment-item-holder">
+        <div class="control-group">
+            <label class="control-label">{item_label}</label>
+            <div class="controls">
+                <input data-name="paymentrequired" {must_pay} type="checkbox" data-item-id="{item_id}"  {item_checked} class="change-payment-required" data-type="{data_type}"
+                data-group-id="{group_id}">
+
+                    <span style="margin-left: 5px;">
+                       {msg_to_show}
+                       </span>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Amount</label>
+
+            <div class="hidden last-item-id" data-group-id="{group_id}" data-last-item-id="{item_id}"></div>
+            <div class="controls">
+                 <span class="payment-quantity" style="padding-right:5px;cursor: pointer;{display_item};">
+                      <input style="" data-name="quantity" type="number"  min="1" data-current-item-id="{item_id}" class=" change-payment-quantity payment-input-small" data-type="{data_type}"
+                             data-group-id="{group_id}"
+                            value="{quantity}" placeholder="1">
+                  </span>
+                <input style="" disabled="disabled" data-name="dollar" type="text" data-current-item-id="{item_id}" class=" change-payment-due payment-input-small" data-type="{data_type}"
+                       data-group-id="{group_id}"
+                       placeholder="00" value="{dollar}"><b style="font-size: 20px;">.</b>
+                    <span>
+                        <input data-name="cent" disabled="disabled" type="text" data-current-item-id="{item_id}" class="change-payment-due payment-input-small" data-type="{data_type}"
+                               data-group-id="{group_id}"
+                               placeholder="00" value="{cent}">
+
+                    </span>
+
+            </div>
+
+        </div>
+
+    </div>
+    ',
+    'reply_payment_due_item_holder_list_item':'
+    <div class="payment-item-holder">
+        <div class="control-group">
+            <label class="control-label">{item_label}</label>
+            <div class="controls">
+                <input data-name="paymentrequired" {must_pay} type="checkbox" {item_checked} data-item-id="{item_id}"  class="change-payment-required" data-type="{data_type}"
+                data-group-id="{group_id}">
+            <span style="margin-left: 5px;">
+               {msg_to_show}
+             </span>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Amount</label>
+
+            <div class="hidden last-item-id" data-group-id="{group_id}" data-last-item-id="{item_id}"></div>
+            <div class="controls">
+                 <span class="payment-quantity" style="padding-right:5px;cursor: pointer;">
+                      <input style="" data-name="quantity" type="number"  min="1" data-current-item-id="{item_id}" class=" change-payment-quantity payment-input-small" data-type="{data_type}"
+                             value="{quantity}" data-group-id="{group_id}"
+                             placeholder="1">
+              </span>
+
+                <input style=""  disabled="disabled" data-name="dollar" type="text" data-current-item-id="{item_id}" class=" change-payment-due payment-input-small" data-type="{data_type}"
+                       data-group-id="{group_id}"
+                       placeholder="00" value="{dollar}"><b style="font-size: 20px;">.</b>
+                    <span>
+                        <input disabled="disabled" data-name="cent" type="text" data-current-item-id="{item_id}" class="change-payment-due payment-input-small" data-type="{data_type}"
+                               data-group-id="{group_id}"
+                               placeholder="00" value="{cent}">
+
+                    </span>
+
+            </div>
+
+        </div>
+
+    </div>
+    ',
+    'reply_payment_due_item_holder_end':'
+
+    <div class="control-group total-item-holder">
+        <label class="control-label">Total</label>
+        <div class="controls">
+            <input data-name="totalmayment" type="text" data-item-id="{item_id}"  data-total-item = "total-amount-{group_id}{data_type}"class="change-total" data-type="{data_type}"
+                   data-group-id="{group_id}" disabled="disabled"
+                   placeholder="00" value="{total}">
+
+        </div>
+    </div>
+</div>
+
+</div>',
+    'reply_text_default_value_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        <input type="text" value="{text_default_value}" disabled="disabled">
+    </label>
+    ',
+    'reply_ordinary_default_date': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        <input type="text" value="{ordinary_default_date}" disabled="disabled">
+    </label>
+    ',
+    'reply_event_date_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        <input type="text" value="{event_date}" disabled="disabled">
+    </label>
+    ',
+    'reply_reply_by_date_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        <input type="text" value="{reply_by_default_date}" disabled="disabled">
+    </label>
+    ',
+    'reply_reminder_date_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        <input type="text" value="{reminder_default_date}" disabled="disabled">
+    </label>
+    ',
+    'reply_event_time_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        Start time:
+        <input type="text" value="{event_start_time}" disabled="disabled">
+    </label>
+    <label class="text">
+        End Time:
+        <input type="text" value="{event_end_time}" disabled="disabled">
+    </label>
+    ',
+    'reply_ordinary_time_item': '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+    <label class="text">
+        Start time:
+        <input type="text" value="{ordinary_start_time}" disabled="disabled">
+    </label>
+    <label class="text">
+        End Time:
+        <input type="text" value="{ordinary_end_time}" disabled="disabled">
+    </label>
+    ',
+    'reply_address_item': '
+<div class="all_address_box">
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="street-{data_type}-text-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" value="">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="address-{data_type}-text-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" value="">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="city-{data_type}-text-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" value="">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="state-{data_type}-text-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" value="">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="postalcode-{data_type}-text-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" value="">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="country-{data_type}-text-{group_id}" value=""
+           name="cnote_form_info[{group_id}][{data_type}][text_default_value]" >
+    </div>
+    <div class="control-group">
+        <label class="control-label"> Address Line 1:</label>
+        <div class="controls">
+            <label class="text">
+                <input data-type="{data_type}" data-group-id="{group_id}" data-input-type="streetaddress" class="change-address" data-street-address-box-id="street-address-box-id-{group_id}" type="text" >
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Address Line 2:</label>
+        <div class="controls">
+            <label class="text" data-item-id="lb-id-{group_id}{item_id}">
+                <input data-type="{data_type}" data-group-id="{group_id}" data-input-type="addressline2"  class="change-address" data-address-address-box-id="address-address-box-id-{group_id}" type="text" >
+
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">City:</label>
+        <div class="controls">
+            <label class="text">
+                <input data-type="{data_type}" data-group-id="{group_id}" data-input-type="city"  class="change-address" data-city-address-box-id="city-address-box-id-{group_id}" type="text" >
+
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">State/Province/Region:</label>
+        <div class="controls">
+            <label class="text" >
+                <input data-type="{data_type}" data-group-id="{group_id}" data-input-type="state"  class="change-address" data-state-address-box-id="state-address-box-id-{group_id}" type="text" >
+
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Postal/Zip Code:</label>
+        <div class="controls">
+            <label class="text">
+                <input data-type="{data_type}" data-group-id="{group_id}" data-input-type="zip"  class="change-address" data-postalcode-address-box-id="postalcode-address-box-id-{group_id}" type="text">
+
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Country:</label>
+        <div class="controls">
+            <label class="text">
+                <input data-input-type="country" data-type="{data_type}" data-group-id="{group_id}" class="change-address" data-country-address-box-id="country-address-box-id-{group_id}" type="text" >
+
+            </label>
+        </div>
+    </div>
+</div>
+
+    ',
+'reply_phone_default_value_item': '
+<div class="group-item-change">
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-phone-{group_id}" name="cnote_form_info[{group_id}][{data_type}][phone]"
+           value="{phone}">
+</div>
+                                            <label class="phone">
+                                                <input type="number"  class="change-phone change-text" data-type="{data_type}" data-group-id="{group_id}"
+                                                       value="{phone}">
+                                               <!-- <span> {phone}</span>-->
+                                            </label></div>
+    ',
+'reply_phone_default_value_item_required': '
+<div class="group-item-change">
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="{group_label}">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-phone-{group_id}" name="cnote_form_info[{group_id}][{data_type}][phone]"
+               placeholder="{phone}" value="">
+    </div>
+    <label class="phone">
+        <div class="required-star"><span>
+             <input type="number"  class="change-phone change-text need-to-fill-up" data-type="{data_type}" data-group-id="{group_id}"
+                    value="{phone}">
+        </span></div>
+
+        <!-- <span> {phone}</span>-->
+    </label></div>
+',
+'reply_name_default_value_item': '
+<div class="group-item-change">
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="Name">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-required-{group_id}" name="cnote_form_info[{group_id}][{data_type}][required]"
+               value="">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-first-name-{group_id}" name="cnote_form_info[{group_id}][{data_type}][firstname]"
+               value="{first_name}">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-last-name-{group_id}" name="cnote_form_info[{group_id}][{data_type}][lastname]"
+               value="{last_name}">
+    </div>
+    <label class="name">
+        <input type="text" data-input-type ="firstname"  class="change-name-data" data-type="{data_type}" data-group-id="{group_id}"  value="{first_name}">
+    </label>
+    <label class="name">
+        <input type="text" data-input-type ="lastname"  class="change-name-data" data-type="{data_type}" data-group-id="{group_id}"  value="{last_name}">
+    </label>
+</div>
+',
+'reply_name_default_value_item_required': '
+<div class="group-item-change">
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="Name">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-required-{group_id}" name="cnote_form_info[{group_id}][{data_type}][required]"
+               value="">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-first-name-{group_id}" name="cnote_form_info[{group_id}][{data_type}][firstname]"
+              placeholder="{first_name}" value="">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-last-name-{group_id}" name="cnote_form_info[{group_id}][{data_type}][lastname]"
+               placeholder="{last_name}" value="">
+    </div>
+    <label class="name">
+        <input type="text" data-input-type ="firstname"  class="change-name-data need-to-fill-up" data-type="{data_type}" data-group-id="{group_id}"  value="" placeholder="{first_name}">
+    </label>
+    <label class="name">
+        <input type="text" data-input-type ="lastname"  class="change-name-data need-to-fill-up" data-type="{data_type}" data-group-id="{group_id}"  value=""  placeholder="{last_name}">
+    </label>
+</div>
+',
+'reply_number_default_value_item':      '
+<div class="group-item-change">
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-number-{group_id}"
+           name="cnote_form_info[{group_id}][{data_type}][number_default_value]" value="{number_default_value}">
+
+</div>
+                                        <label class="phone">
+                                            <input type="number"  class="change-text change-phone" data-type="{data_type}" data-group-id="{group_id}"
+                                                   value="{number_default_value}">
+                                           <!-- <span> {number_default_value}</span>-->
+                                        </label></div>
+',
+'reply_number_default_value_item_required':      '
+<div class="group-item-change">
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="{group_label}">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-number-{group_id}"
+               name="cnote_form_info[{group_id}][{data_type}][number_default_value]" placeholder="{number_default_value}" value="">
+
+    </div>
+    <label class="phone">
+       <div class="required-star">
+           <span>
+                <input type="number"  class="change-text change-phone need-to-fill-up" data-type="{data_type}" data-group-id="{group_id}"
+                       value="{number_default_value}">
+        <!-- <span> {number_default_value}</span>-->
+           </span>
+       </div>
+    </label></div>
+',
+    'reply_paragraph_default_value_item':      '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+                                        <label class="paragraph">
+                                            <span class="disable-paragraph"  data-paragraph-id="paragraph-id-{group_id}" value="Para {group_id}">{paragraph}</span>
+
+                                        </label>
+    ',
+    'reply_sectionbreak_default_value_item':      '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+
+                                            <label class="sectionbreak">
+                                                <hr style="border: dashed #000; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0;">
+                                            </label>
+    ',
+    'reply_pagebreak_default_value_item':      '
+<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+                                        <div class="control-group">
+                                            <label class="control-label">Page Break {group_id} </label>
+                                            <div class="controls">
+
+                                            </div>
+                                        </div>
+    ',
+'reply_remark_default_value_item': '
+
+
+<label class="remark" style="margin-left:0px;">
+    <textarea class="disable-remark" style="width:420px;height:130px;" data-group-id="{group_id}" data-type="{data_type}" data-paragraph-id="remark-id-{group_id}" value="remark {group_id}"
+              placeholder="Recipients Remarks"></textarea>
+</label></div>
+',
+'reply_hidden_remark_default_value_item': '
+<div class="group-item-remark">
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+            <input type="hidden" data-type="{data_type}"
+                                                   data-group-id="{group_id}"
+                                                   class="{data_type}"
+                                                   data-id="{data_type}-remark-{group_id}"
+                                                   data-caller-name="cnote_form_info[{group_id}][{data_type}][remark]"
+                                                   name="cnote_form_info[{group_id}][{data_type}]"
+                                                   value="<textarea></textarea>">
+
+        </div>',
+    'reply_pagename_default_value_item':      ' <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+           data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+           value="{group_label}">
+</div>
+                                                    <label class="pagename">
+                                                        <span>{pagename}</span>
+                                                    </label>
+    ',
+    'reply_control_checkbox_radio_item':       '
+                                                 <label class="{item_type}">
+                                                     <input class="{item_type}"  type="{item_type}" data-type="{item_type}" data-group-id="{group_id}" data-item-id="{item_id}" checked="{item_checked}">
+                                                     <span>{item_label}</span>
+                                                 </label>
+                                                        ',
+    'reply_control_radio_item':       '
+                                        <label class="{item_type}">
+                                            <input class="{item_type} change-radio"   type="{item_type}" data-type="{item_type}" data-group-id="{group_id}" data-item-id="{item_id}" checked="{item_checked}">
+                                            <span>{item_label}</span>
+                                        </label>
+                                        ',
+    'reply_control_dropdown_sitem':
+    '
+    <select class="{item_type} reply-change-dropdown" data-type="{item_type}" data-group-id="{group_id}">
+    ',
+    'reply_control_dropdown_item':               ' <option class="dropdown_option change-dropdown-option" data-type="{item_type}" data-group-id="{group_id}" data-item-id="{item_id}" selected="{item_checked}"><span data-dropdown-item-text-id="dropdown-text-id-{group_id}{item_id}">{item_label}</span></option>
+    ',
+    'reply_control_dropdown_eitem':             '</select>
+    ',
+
+
+    'reply_control_sign_item':          '
+
+                                                        <label class="{item_id}">
+                                                            <span>{item_label}</span>
+                                                        </label>
+    ',
+    'reply_control_sign_pic': '
+    <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+        <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+               data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+               value="{group_label}">
+    </div>
+
+    <img src="{item_label}" />
+    ',
+    'reply_email_default_value_item':      '
+    <div class="group-item-change">
+        <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+                   data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+                   value="{group_label}">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+                   data-id="{data_type}-email-{group_id}"
+                   name="cnote_form_info[{group_id}][{data_type}][email_default_value]" value="{email_default_value}">
+            </div>
+        <label class="text">
+            <input type="email" class="change-text" data-type="{data_type}" data-group-id="{group_id}"
+                   placeholder="{email_default_value}" value="">
+
+        </label>
+        </div>',
+    'reply_email_default_value_item_required':      '
+    <div class="group-item-change">
+        <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+                   data-id="{data_type}-label-{group_id}" name="cnote_form_info[{group_id}][{data_type}][label_name]"
+                   value="{group_label}">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}"
+                   data-id="{data_type}-email-{group_id}"
+                   name="cnote_form_info[{group_id}][{data_type}][email_default_value]" placeholder="{email_default_value}" value="">
+        </div>
+        <label class="text">
+          <div class="required-star">
+              <span>
+                  <input type="email" class="change-text need-to-fill-up" data-type="{data_type}" data-group-id="{group_id}"
+                         placeholder="{email_default_value}"  value="">
+
+              </span>
+          </div>
+        </label>
+    </div>',
+    'reply_control_signature_item':'
+    <div class="group-item-signature">
+        <div class="control-group control-groupnogap">
+            <div class="control-group">
+                <label class="control-label">{label_name}</label>
+                <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="{data_type}-label-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][label_name]" value="{group_label}">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-text-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][text]" value="{text}">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-firstname-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][first_name]" value="{firstname}">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-lastname-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][last_name]" value="{lastname}">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-consent-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][consent]" value="{Consent}">
+                    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-non-consent-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][nonconsent]" value="{NonConsent}">
+                </div>
+                <div class="controls">
+                    <textarea disabled="disabled" class="change-signature" style="margin:5px;width:420px;height:130px;" data-type="{data_type}" data-group-id="{group_id}" data-input-type ="0" >{text}
+                    </textarea><br>
+
+                    <div class="hidden last-item-id" data-group-id="{group_id}" data-last-item-id="{item_id}"></div>
+
+                    <br><label class ="">_______________________</label><br>
+                    <label class ="">Signature</label>
+
+                    <input type="text"  class="change-signature" style="margin:5px;" data-type="{data_type}" data-group-id="{group_id}" data-input-type ="1" value="{firstname}">
+                    <input type="text"  class="change-signature" style="margin:5px;"data-type="{data_type}" data-group-id="{group_id}" data-input-type ="2" value="{lastname}"><br>
+                    <button style="margin:5px;"  id ="btn-consent" class="btn-consent btn btn-success btn-medium " type="button" value="Consent"   data-type="{data_type}" data-group-id ="{group_id}" data-item-id ="1" data-user-id="{user_id}" data-note-type="{note_id}"><i class="fa fa-thumbs-up fa-2x"></i></button>
+                    <button style="margin:5px;"  id ="non-consent" class="non-consent btn btn-danger btn-medium" type="button" value="Non consent"  data-type="{data_type}"  data-group-id ="{group_id}" data-item-id ="2" data-user-id="{user_id}" data-note-type="{note_id}"><i class="fa fa-thumbs-down fa-2x"></i></button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    ',
+'reply_control_signature_hidden_item':
+'<div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="{data_type}-label-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][label_name]" value="Signature{group_id}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-text-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][text]" value="Text{group_id}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-firstname-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][first_name]" value="First Name{group_id}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-lastname-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][last_name]" value="Last Name{group_id}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-consent-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][consent]" value="Consent{group_id}">
+    <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="hidden-{data_type}-non-consent-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][nonconsent]" value="Non Consent{group_id}">
+</div>',
+    'reply_form_end': '
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <button id="reply-btn" type="submit" class="btn btn-success btn-large">Reply To Note</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                                '
+};

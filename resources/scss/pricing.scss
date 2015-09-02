@@ -1,0 +1,121 @@
+.pricing-table-container {
+  margin: 60px 0;
+  font-family: "patua one";
+  .plan{
+    @include feature-list-box-shadow();
+    padding: 0 0 20px;
+    margin: 0 0 15px;
+    background: #fff;
+    text-align: center;
+    list-style-type: none;
+    li{
+      padding: 10px 15px;
+      color: #ccc;
+      border-top: 1px solid #f5f5f5;
+      &.plan-price{
+        border-top: 0;
+      }
+      &.plan-name{
+        cursor: pointer;
+        padding: 15px;
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+        background: #e74c3c;
+        margin-bottom: 10px;
+        border-top: 0;
+        height: 45px;
+      }
+
+      >strong{
+        color: #000000;
+        font-weight: normal;
+      }
+
+      >input {
+        width: 93%;
+        margin: 0;
+      }
+
+      &.plan-action{
+        margin-top: 10px;
+        border-top: 0;
+
+        a {
+          &:hover {
+            background-position: 0 -30px;
+          }
+        }
+      }
+    }
+
+    &.featured{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    &:hover{
+      li{
+        &.plan-name{
+        }
+      }
+    }
+  }
+
+  .plan-free {
+    li {
+      &.plan-name {
+        @include btn-custom(#2ec452, #059a29);
+      }
+
+      &.plan-action{
+        a {
+          @include btn-custom(#2ec452, #059a29);
+        }
+      }
+    }
+  }
+
+  .plan-basic {
+    li {
+      &.plan-name {
+        @include btn-custom(#1aa7f0, #0183c5);
+      }
+
+      &.plan-action{
+        a {
+          @include btn-custom(#1aa7f0, #0183c5);
+        }
+      }
+    }
+  }
+
+  .plan-standard {
+    li {
+      &.plan-name {
+        @include btn-custom(#f86030, #d03808);
+      }
+
+      &.plan-action{
+        a {
+          @include btn-custom(#f86030, #d03808);
+        }
+      }
+    }
+  }
+
+  .plan-premium {
+    li {
+      &.plan-name {
+        @include btn-custom(#fca830, #ce7a02);
+      }
+
+      &.plan-action{
+        a {
+          @include btn-custom(#fca830, #ce7a02);
+        }
+      }
+    }
+  }
+}

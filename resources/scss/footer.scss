@@ -1,0 +1,23 @@
+.footer {
+  background: $footer_menu_bg_color;
+
+  .footer-menu {
+    padding: 15px 0;
+
+    .logo, .support {
+      float: left;
+    }
+
+    .cb_navigation {
+      .nav {
+        padding: 10px 0;
+
+        a {
+          letter-spacing: 0;
+          font-family: 'patua one';
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

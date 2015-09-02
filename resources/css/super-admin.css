@@ -1,0 +1,39 @@
+
+.main-content-body { }
+
+.org-setup-container {
+    margin-bottom: 30px;
+}
+
+.org-setup-form-container {
+    padding: 20px 10px;
+}
+
+.org-setup-email {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+.main-content-body .cldnt-info-area .cldnt-pagination {
+    text-align: center; }
+.main-content-body .cldnt-info-area .cldnt-user-list table td {
+    vertical-align: middle; }
+
+.main-content-body .cldnt-info-area .cldnt-user-list table td.action-btn {
+    text-align: center; }
+
+#org-modal {
+    max-width: 900px !important;
+
+}
+
+/*V.R.Jewel code*/
+
+.drag-position{
+    position: fixed;
+    top: 15px;
+}
+
+.cldnt-info-area{
+    min-height:420px;
+}

@@ -1,0 +1,38 @@
+.plan-details-container {
+  background: #FFFFFF;
+  margin: 60px 0;
+
+  .plan-details-header {
+    padding: 10px 0;
+
+    h3, &:hover {
+      font-family: "patua one";
+      font-weight: normal;
+      color: $plan_details_header_color;
+    }
+  }
+
+  .plan-details {
+    padding: 0 35px;
+    .plan-list {
+      li {
+        padding: 5px 2px;
+        list-style-type: none;
+        font-weight: bold;
+
+        .fa {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .plan-details-footer {
+    padding: 0 60px;
+    .plan-details-footer-text {
+      font-family: "patua one";
+      font-weight: normal;
+      color: #fca830;
+    }
+  }
+}

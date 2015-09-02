@@ -1,0 +1,10 @@
+Helpful tips in preparing your CSV File. Once completed and checked please remember to save as a .CSV format for your upload,,,,,,,,,,
+NB: Remember you will need to prepare a new CSV file for each Class/Group/Team you have created in Step 2 of Registration,,,,,,,,,,
+Student / Member First Name,Student / Member Last Name,Identity No ( optional) ,Student / Member Email only for +13 yrs (optional) ,Date of Birth (DD/MM/YYYY),Parent / Caregiver1 First Name,Parent / Caregiver1 Last Name,Parent / Caregiver1 Email,Parent / Caregiver2 First Name,Parent / Caregiver2 Last Name,Parent/ Caregiver 2 Email
+John,Doe,123525ABCD,john.doe@email.com,31/03/1995,David,Doe,dads@email.com,Carolyn,Elizabeth,moms@email.com
+Tip: If the person has two or more first names insert in this column eg. John Paul,Tip: Ensure there are no punctuation marks as this will corrupt the upload,If you have an ID number - list it here,Tip: If the Student is over age 13 their email can be listed here. NB: The system will not allow Students under Age 13 to register on CloudeNotes,Tip: The system will recognise the following Date Formats DD/MM/YYYY or MM/DD/YYYY.,Here you can list the Parent/Caregiver. It wont matter if the listing is Mother/Father or Caregiver. Once the Parent is invited to register they can select their relaitionship to the student,,A Parent/Caregiver can be invited to Register with CloudeNotes if you have their email address listed here,,,An additional Parent/Caregiver can be invited to Register with CloudeNotes if you have their email address listed here
+Rothy,Rougue,,rothi@codeboxr.net,31/10/1990,Rothiur,Chy,rothi@gmail.com,Rennegan,Chy,rennegan@gmail.com
+Hatake ,Kakashi,,kakashi@gmail.net,12/03/1988,Chiru,Miah,chiru@yahoo.com,Charita,Rumi,charita@ymail.com
+Wahid,Hussain,,wahid@codeboxr.net,05/01/1984,Lafta ,Soud,lafta@hotmail.com,Yahoo,Messanger,yahoo@ymail.com
+Sabuj,Chy,,sabuj@codeboxr.com,24/05/1980,Sabujia,Alam,sabujia@ymail.com,Subidha,Nai,subidha@ymail.com
+Sadiq,Alam,,sadiq@codeboxr.com,25/08/1978,Sadiqi,Siddique,sadiqi@humhum.com,Siddiki,Rahman,siddiki@humhum.com

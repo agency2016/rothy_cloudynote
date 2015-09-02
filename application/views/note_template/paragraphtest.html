@@ -1,0 +1,48 @@
+<div class="group-item">
+
+    <div class="control-group control-groupnogap" data-group-id="gr-id-{group_id}" data-type="paragraph" data-sorted="sorted">
+        <i class="control-group-icon fa fa-plus" href="#"></i>
+        <label class="control-label" data-label-id="label-{group_id}">Paragraph {group_id}</label>
+        <div class="controls">
+            <label class="paragraph" data-item-id="lb-id-{group_id}{item_id}">
+                <textarea class="disable-paragraph"  data-paragraph-id="paragraph-id-{group_id}" disabled="disabled" value="Para {group_id}" placeholder="Enter text ..."></textarea>
+            </label>
+        </div>
+
+        <div class="hidden-info" data-type="{data_type}" data-group-id="{group_id}" style="display: none">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="{data_type}-label-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][label_name]" value="Paragraph {group_id}">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="{data_type}-required-{group_id}" name="cnote_form_info[{group_id}][{data_type}][required]" value="">
+            <input type="hidden" data-type="{data_type}" data-group-id="{group_id}" class="{data_type}" data-id="{data_type}-text-{group_id}"  name="cnote_form_info[{group_id}][{data_type}][Paragraph]" value="Paragraph {group_id}">
+        </div>
+    </div>
+
+    <div class="item-holder">
+
+        <div class="control-group">
+            <label class="control-label">Item Required</label>
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox" class="item-required" data-type="{data_type}" data-group-id="{group_id}" data-current-item-id="{item_id}">
+                </label>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Item Label</label>
+            <div class="controls">
+                <input type="text" class="change-label" data-type="{data_type}" data-group-id="{group_id}" data-append-to="label-{group_id}" value="Paragraph {group_id}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Item Value</label>
+            <div class="hidden last-item-id" data-group-id="{group_id}" data-last-item-id="{item_id}"></div>
+            <div class="controls">
+                <textarea id="gr-id-{group_id}{data_type}" disabled="disabled"  class="cnote-textarea change-paragraph" data-type="{data_type}" data-group-id="{group_id}" value="Para {group_id}" placeholder="Enter text ..."></textarea>
+            </div>
+            <div class="controls">
+                <button  id="gr-id-{group_id}-btn-{data_type}" class="cnote-textarea-button" data-type="{data_type}" data-group-id="{group_id}" value="Add" >Edit</button>
+            </div>
+        </div>
+    </div>
+</div>

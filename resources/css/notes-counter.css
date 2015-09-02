@@ -1,0 +1,76 @@
+/*.wrapper {
+    height: 100%;
+    width: 100%;
+}*/
+/*body { background: url(../img/bg-tile.png) repeat; }*/
+
+/*.wrapper { display: table; }*/
+/*
+.cell {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}*/
+
+/*#holder {
+    width: 100%;
+    height: 50px;
+    *//*margin: auto;*//*
+    margin: 44px auto -60px !important;
+    padding-top: 20px;
+    border: 1px solid;
+}*/
+
+span.firstLetter{
+    color: #5BB75B;
+    font-family: 'helvetica';
+    font-size: 24px;
+    margin: 5px -82px 0 84px !important;
+    /*text-align: left;*/
+}
+
+span.lastLetter{
+    color: #5BB75B;
+    font-family: 'helvetica';
+    font-size: 24px;
+    margin: 5px 0 0 -157px !important;
+
+}
+
+span.digits{
+    background: url("../img/roll-placeholder.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 56px;
+    height: 69px;
+    line-height: 70px;
+    margin: 0;
+    text-align: center;
+    width: 61px;
+}
+
+.popText{
+    margin-top: 25px !important;
+}
+
+.note-counter{
+    text-align: center;
+}
+
+.index-ticker{
+    padding: 60px 0 25px;
+}
+
+.saved-ticker{
+    margin: 10px 0 65px ;
+}
+/*.cntSeparator { display: none; }
+
+.cntDigit {
+    margin-top: 148px !important;
+}
+
+.cntDigit#cnt_0 { margin-left: 52px; }
+.cntDigit#cnt_2 { margin-left: 7px; }*/

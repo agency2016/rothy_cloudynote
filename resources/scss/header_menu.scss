@@ -1,0 +1,44 @@
+//To down from main window and make separate with offer block
+.header_row {
+  padding: 25px 0;
+}
+
+.cb_navigation {
+  font-family: 'Patua One';
+  .nav {
+    float: right;
+    margin: 0;
+    padding: 30px 0 0;
+
+    li {
+      a {
+        letter-spacing: 1px;
+        color: $header_menu_color;
+        font-size: 16px;
+        //font-weight: bold;
+        &:hover {
+          background: none;
+        }
+
+        .btn {
+          font-weight: bold;
+        }
+      }
+
+      a.login_signup_btn {
+        padding-top: 0;
+        padding-bottom: 0;
+        float: left;
+      }
+    }
+
+    li.login_signup_group {
+      a {
+        padding-left: 3px;
+        &:first-child {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}

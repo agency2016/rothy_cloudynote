@@ -1,0 +1,22 @@
+.auth-form-container {
+  margin: 45px 0;
+
+  .form-container {
+    background: #FFFFFF;
+    padding: 30px 10px;
+    min-height: 330px;
+
+    .register-form {
+      padding: 0 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .login-form {
+      padding: 0 20px 0 0;
+
+      .form-forgot {
+        display: none;
+      }
+    }
+  }
+}
